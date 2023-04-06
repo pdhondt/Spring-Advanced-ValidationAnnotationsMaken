@@ -1,9 +1,10 @@
 package be.vdab.validation.domain;
 
 import be.vdab.validation.constraints.Prijs;
+import be.vdab.validation.constraints.VerkoopPrijsAankoopPrijs;
 
 import java.math.BigDecimal;
-
+@VerkoopPrijsAankoopPrijs
 public class Product {
     @Prijs
     private BigDecimal aankoopPrijs;
