@@ -1,14 +1,13 @@
 package be.vdab.validation.domain;
 
-import jakarta.validation.constraints.Digits;
-import jakarta.validation.constraints.PositiveOrZero;
+import be.vdab.validation.constraints.Prijs;
 
 import java.math.BigDecimal;
 
 public class Product {
-    @PositiveOrZero @Digits(integer = 7, fraction = 2)
+    @Prijs
     private BigDecimal aankoopPrijs;
-    @PositiveOrZero @Digits(integer = 7, fraction = 2)
+    @Prijs
     private BigDecimal verkoopPrijs;
 
     public BigDecimal getAankoopPrijs() {
